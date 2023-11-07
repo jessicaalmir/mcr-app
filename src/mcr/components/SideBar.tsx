@@ -3,6 +3,7 @@ import logo from '../../assets/mediapro_logo.png';
 import { Box, Divider, Drawer, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from "@mui/material";
 import { AssessmentOutlined, SettingsInputAntennaOutlined } from '@mui/icons-material';
 import { mainTheme } from '../../theme';
+import { Link } from 'react-router-dom';
 
 interface SideBarProps{
     drawerWidth?: number;
@@ -46,7 +47,7 @@ export const SideBar:React.FC<SideBarProps> = ({drawerWidth}) => {
                 {
                     menuItems.map((item, index) => (
                         <ListItem key={index} disablePadding>
-                            <ListItemButton>
+                            <ListItemButton LinkComponent={Link} href={item.route}>
                                 <Grid container>
                                     <ListItemIcon>
                                         {item.icon}
