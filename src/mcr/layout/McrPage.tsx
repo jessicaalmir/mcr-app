@@ -1,10 +1,10 @@
-import { McrLayout } from "../layout/McrLayout";
+import { McrLayout } from "./McrLayout";
 import { Home } from "../views";
 
 export const McrPage = () => {
   return (
     <McrLayout>
-      <Home />
+
     </McrLayout>
 
   )

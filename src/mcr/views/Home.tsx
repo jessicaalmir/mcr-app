@@ -1,7 +1,9 @@
 import { Grid } from "@mui/material"
 import logo from '../../assets/mediapro_logo.png';
+import React from "react";
 
-export const Home = () => {
+type Props = {};
+export const Home = (props: Props) => {
   return (
     <Grid 
       container

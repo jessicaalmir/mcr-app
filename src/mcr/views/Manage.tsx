@@ -1,17 +1,38 @@
-import { Grid, Paper, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material"
+import { Box } from "@mui/material"
+
+const columns = [
+    { field: 'id', headerName: 'ID', width: 90 },
+    {
+      field: 'name',
+      headerName: 'Name',
+      width: 150,
+      editable: true,
+    },
+    {
+      field: 'txStart',
+      headerName: 'TX Start',
+      width: 150,
+      editable: true,
+    },
+    {
+      field: 'txEnd',
+      headerName: 'TX End',
+      width: 150,
+      editable: true,
+    },
+    {
+      field: 'actions',
+      headerName: 'Actions',
+      description: 'This column is not sortable.',
+      sortable: false,
+      width: 160,
+    },
+  ];
 
 export const Manage = () => {
     return (
-        <Grid container direction="row" justifyContent="space-between" sx={{ mb: 1 }}>
-            <Typography>Hola</Typography>
-            <TableContainer component={Paper}>
-                <TableHead>
-                    <TableRow>
-                        <TableCell>Column 1
-                        </TableCell>
-                    </TableRow>
-                </TableHead>
-            </TableContainer>
-        </Grid>
+        <Box sx={{ height: 400, width: '100%' }}>
+
+        </Box>
     )
 }
